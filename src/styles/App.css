@@ -1,3 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Outfit", sans-serif;
+    background: #f5f5f5;
+  }
+
+  li {
+    @apply inline-block mx-5 text-lg font-normal text-white;
+  }
+}
+
+@layer components {
+  .navbar {
+    @apply bg-gray-700 h-full px-1 py-0 top-0 left-0 z-10;
+  }
+
+  .side-padding {
+    @apply pl-[10%] pr-[10%];
+  }
+
+  .logo {
+    @apply size-10 ml-5;
+  }
+
+  .logo-and-title {
+    @apply flex gap-3.5;
+  }
+
+  .title {
+    @apply text-white text-2xl mt-1;
+    font-family: "Cal Sans", sans-serif;
+  }
+
+  .nav-content {
+    @apply flex justify-between items-center;
+  }
+
+  .btn {
+    @apply bg-[#fff] text-[#212121] px-2 py-2 my-2 ml-5 rounded-full text-lg cursor-pointer border-0 outline-0;
+  }
+}
+
+/* ts- 21.30 */
