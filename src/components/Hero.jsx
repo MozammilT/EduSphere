@@ -12,7 +12,7 @@ function Hero() {
           knowledge, skills, and experiences needed to excel in the dynamic
           field of education
         </p>
-        <button className="btn">
+        <button className="btn group">
           Explore More <img src={darkArrowIcon} className="arrow-icon" />
         </button>
       </div>
