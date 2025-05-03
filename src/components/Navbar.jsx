@@ -2,7 +2,7 @@ import logo from "/logo-icon.svg";
 
 function Navbar() {
   return (
-    <nav className="navbar side-padding">
+    <nav className="navbar">
       <div className="nav-content">
         <div className="logo-and-title">
           <img src={logo} className="logo" />

@@ -11,17 +11,18 @@
   }
 
   li {
-    @apply inline-block mx-5 text-lg font-normal text-white;
+    @apply inline-block mx-5 text-lg font-normal text-white cursor-pointer;
   }
 }
 
 @layer components {
-  .navbar {
-    @apply bg-gray-700 h-full px-1 py-0 top-0 left-0 z-10;
+
+  .center{
+    @apply pl-[10%] pr-[10%]
   }
 
-  .side-padding {
-    @apply pl-[10%] pr-[10%];
+  .navbar {
+    @apply absolute w-full px-5 py-0 top-0 left-0 z-10;
   }
 
   .logo {
@@ -42,7 +43,28 @@
   }
 
   .btn {
-    @apply bg-[#fff] text-[#212121] px-2 py-2 my-2 ml-5 rounded-full text-lg cursor-pointer border-0 outline-0;
+    @apply bg-[#fff] text-[#212121] p-3 my-2 ml-5 rounded-full text-[15px] cursor-pointer border-0 outline-0 inline-flex gap-3 items-center;
+  }
+
+  .hero-section {
+    @apply w-full flex items-center justify-center min-h-screen bg-cover bg-no-repeat bg-center;
+    background-image: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url("/hero.png");
+  }
+
+  .hero-text{
+    @apply text-white text-center max-w-[800px];
+  }
+
+  .hero-heading{
+    @apply text-6xl text-white tracking-tighter text-balance mb-4
+  }
+
+  .hero-detail{
+    @apply text-xl text-white tracking-tighter text-balance mb-4
+  }
+
+  .arrow-icon{
+    @apply w-7
   }
 }
 
