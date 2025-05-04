@@ -8,25 +8,25 @@ import program_icon_3 from "/program-icon-3.png";
 function Programs() {
   return (
     <div className="programs center">
-      <div className="program">
+      <div className="program group">
         <img src={program_1} className="pro-img" />
         <div className="caption">
           <img src={program_icon_1} className="cap-img" />
-          <p>Graduation Degree</p>
+          <p className="cap-name">Graduation Degree</p>
         </div>
       </div>
-      <div className="program">
+      <div className="program group">
         <img src={program_2} className="pro-img" />
         <div className="caption">
           <img src={program_icon_2} className="cap-img" />
-          <p>Masters Degree</p>
+          <p className="cap-name">Masters Degree</p>
         </div>
       </div>
-      <div className="program">
+      <div className="program group">
         <img src={program_3} className="pro-img" />
         <div className="caption">
           <img src={program_icon_3} className="cap-img" />
-          <p>Post Graduation </p>
+          <p className="cap-name">Post Graduation </p>
         </div>
       </div>
     </div>

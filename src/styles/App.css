@@ -20,6 +20,10 @@
     @apply pl-[10%] pr-[10%];
   }
 
+  .bg-blue-overlay {
+    background-color: rgba(0, 15, 152, 0.3);
+  }
+
   .navbar {
     @apply absolute w-full px-5 py-0 top-0 left-0 z-10;
   }
@@ -77,16 +81,21 @@
 
   .pro-img {
     @apply w-full rounded-xl block;
-    /* w-full */
   }
 
   .caption {
-    @apply rounded-xl absolute inset-1 bg-blue-overlay;
+    @apply rounded-xl absolute inset-0 flex flex-col items-center justify-center cursor-pointer opacity-0 group-hover:bg-blue-overlay group-hover:opacity-100 transition-all duration-300 pt-96 group-hover:pt-0 ease-in-out;
   }
 
-  .bg-blue-overlay {
-    background-color: rgba(0, 15, 152, 0.3);
+  .cap-name {
+    @apply text-white text-lg;
   }
+
+  .cap-img {
+    @apply size-20 mb-3;
+  }
+
+  
 }
 
 /* ts- 21.30 */
