@@ -95,7 +95,17 @@
     @apply size-20 mb-3;
   }
 
-  
+  .title {
+    @apply text-center mx-0 mt-16 mb-8;
+  }
+
+  .title-p {
+    @apply text-[#212EA0] text-lg;
+  }
+
+  .title-h {
+    @apply text-[#000F38] text-3xl;
+  }
 }
 
 /* ts- 21.30 */
