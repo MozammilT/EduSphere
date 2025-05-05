@@ -1,8 +1,17 @@
+import { useState, useEffect } from "react";
 import logo from "/logo-icon.svg";
 
 function Navbar() {
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 50 ? setSticky(true) : setSticky(false);
+    });
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${sticky && 'dark-nav'} center`}>
       <div className="nav-content">
         <div className="logo-and-title">
           <img src={logo} className="logo" />
