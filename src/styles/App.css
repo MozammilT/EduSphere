@@ -109,7 +109,7 @@
   }
 
   .title-h {
-    @apply text-[#000F38] text-3xl tracking-wide;
+    @apply text-[#000F38] text-3xl font-semibold tracking-wide;
   }
 
   .about {
@@ -140,7 +140,22 @@
     @apply my-4 text-[#676767] w-full;
   }
   .play-icon {
-    @apply w-16 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+    @apply w-16 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer;
+  }
+
+  .campus {
+    @apply my-20 mx-0 w-11/12 text-center;
+  }
+
+  .gallery {
+    @apply flex items-center justify-between gap-8 mb-10;
+  }
+
+  .gallery-img {
+    @apply rounded-2xl w-3/12;
+  }
+
+  .dark {
+    @apply bg-[#212EA0] text-white ml-24 p-4;
   }
 }
-/* ts- 21.30 */
