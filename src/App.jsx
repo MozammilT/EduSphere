@@ -4,6 +4,7 @@ import Programs from "./components/Programs";
 import Title from "./components/Title";
 import About from "./components/About";
 import Campus from "./components/Campus";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <About />
       <Title subtitle="GALLERY" title="Campus Photos" />
       <Campus />
+      <Title subtitle="TESTIMONIALS" title="What Student Says" />
+      <Testimonials />
     </>
   );
 }
