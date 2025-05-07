@@ -223,7 +223,7 @@
   }
 
   .contact {
-    @apply mx-20 my-auto max-w-[90%] flex items-center justify-between;
+    @apply mx-20 my-auto max-w-[90%] flex items-start justify-between;
   }
 
   .contact-col {
@@ -239,6 +239,10 @@
   }
 
   .input-area{
-    @apply block w-full bg-[#EBECFE] p-4 border-0 outline-none
+    @apply block w-full bg-[#EBECFE] p-4 border-none outline-none mb-4 mt-1
+  }
+
+  .label{
+    @apply text-[#676767] text-lg resize-none
   }
 }
