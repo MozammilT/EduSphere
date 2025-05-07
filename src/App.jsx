@@ -5,6 +5,8 @@ import Title from "./components/Title";
 import About from "./components/About";
 import Campus from "./components/Campus";
 import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+// import Testimonials_Test from "./components/Testimonials-test";
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
       <Campus />
       <Title subtitle="TESTIMONIALS" title="What Student Says" />
       <Testimonials />
+      <Title subtitle="CONTACT US" title="Get In Touch" />
+      <Contact />
+      {/* <Testimonials_Test /> */}
     </>
   );
 }

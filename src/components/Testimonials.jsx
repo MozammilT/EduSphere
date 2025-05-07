@@ -12,22 +12,6 @@ function Testimonials() {
       <img src={back_icon} className="testimonials-btn back" />
       <div className="slider">
         <ul className="slider-cards">
-          {/* <li className="slider-card">
-            <div className="slide">
-              <div className="user-info">
-                <img src={user_1} className="user-img" />
-                <div>
-                  <h3 className="user-name">Emily William</h3>
-                  <span className="user-add">Masachussets, USA</span>
-                </div>
-              </div>
-              <p className="user-para">
-                Every corner of EduShere inspires you to learn and grow. The
-                support from faculty and peers has been incredible throughout my
-                time here.
-              </p>
-            </div>
-          </li> */}
           <li className="slider-card">
             <div className="slide">
               <div className="user-info">
@@ -92,6 +76,22 @@ function Testimonials() {
               </p>
             </div>
           </li>
+          {/* <li className="slider-card">s
+            <div className="slide">
+              <div className="user-info">
+                <img src={user_1} className="user-img" />
+                <div>
+                  <h3 className="user-name">Emily William</h3>
+                  <span className="user-add">Masachussets, USA</span>
+                </div>
+              </div>
+              <p className="user-para">
+                Every corner of EduShere inspires you to learn and grow. The
+                support from faculty and peers has been incredible throughout my
+                time here.
+              </p>
+            </div>
+          </li> */}
         </ul>
       </div>
     </div>
