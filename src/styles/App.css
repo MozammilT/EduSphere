@@ -189,7 +189,7 @@
 
   .slide {
     @apply shadow-md p-8 bg-[#eeeeee] rounded-xl leading-snug h-full
-    /* box-shadow: 0 0 20px rgba(0,0,0,0.05) bg#eeeeee; */
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.05) bg#eeeeee; */;
   }
 
   .user-name {
@@ -212,10 +212,33 @@
     @apply flex mb-5 items-center;
   }
 
+  /* Contact-css */
 
+  .icon-text {
+    @apply flex items-center gap-3;
+  }
 
+  .icon {
+    @apply w-7;
+  }
 
-  /* TESTIMONIAL-TEST-CSS */
+  .contact {
+    @apply mx-20 my-auto max-w-[90%] flex items-center justify-between;
+  }
 
-  
+  .contact-col {
+    @apply basis-3/6 bg-[#f5f5f5];
+  }
+
+  .contact-col-h3 {
+    @apply text-[#000F38] font-medium text-3xl tracking-wide mb-5;
+  }
+
+  .contact-para {
+    @apply text-[#676767] max-w-md text-left font-normal text-[18px] mb-4;
+  }
+
+  .input-area{
+    @apply block w-full bg-[#EBECFE] p-4 border-0 outline-none
+  }
 }
