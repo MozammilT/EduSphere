@@ -1,3 +1,5 @@
+import React from "react";
+import { toast } from "react-hot-toast";
 import message_icon from "/msg-icon.png";
 import mail_icon from "/mail-icon.png";
 import phone_icon from "/phone-icon.png";
@@ -5,6 +7,36 @@ import location_icon from "/location-icon.png";
 import whiteArrowIcon from "/white-arrow.png";
 
 function Contact() {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "c044ed0e-05bd-4fa7-a8e1-7d1fee659d82");
+
+    const submission = async () => {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        event.target.reset();
+        return data;
+      } else {
+        console.log("Error", data);
+        throw new Error(data.message);
+      }
+    };
+
+    toast.promise(submission, {
+      loading: "Sending...",
+      success: "Form Submitted Successfully",
+      error: (err) => `Submittion failed: ${err.message}`,
+    });
+  };
+
   return (
     <div className="contact center">
       <div className="contact-col">
@@ -59,7 +91,7 @@ function Contact() {
           <textarea
             name="message"
             cols="30"
-            rows="6"
+            rows="3"
             placeholder="Enter your message"
             className="input-area"
           />
