@@ -1,6 +1,5 @@
 function Footer() {
   const currYear = new Date().getFullYear();
-  console.log(currYear);
 
   return (
     <div className="center">
