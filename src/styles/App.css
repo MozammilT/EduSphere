@@ -17,7 +17,7 @@
 
 @layer components {
   .center {
-    @apply pl-[10%] pr-[10%];
+    @apply pl-[5%] pr-[5%] lg:pl-[10%] lg:pr-[10%];
   }
 
   .bg-blue-overlay {
@@ -26,11 +26,10 @@
 
   .navbar {
     @apply fixed w-full top-0 left-0 z-10;
-    /* px-5 py-0 */
   }
 
   .dark-nav {
-    @apply bg-[#212EA0] duration-300 ease-in-out transition-colors;
+    @apply md:bg-[#212EA0] bg-[#212EA0] duration-300 ease-in-out transition-colors;
   }
 
   .logo {
