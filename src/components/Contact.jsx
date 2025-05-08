@@ -38,7 +38,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact center">
+    <div className="contact center" id="contact">
       <div className="contact-col">
         <h3 className="contact-col-h3 icon-text">
           Send us a message
@@ -91,7 +91,7 @@ function Contact() {
           <textarea
             name="message"
             cols="30"
-            rows="3"
+            rows="6"
             placeholder="Enter your message"
             className="input-area"
           />

@@ -245,4 +245,16 @@
   .label{
     @apply text-[#676767] text-lg resize-none
   }
+
+  .footer{
+    @apply mx-auto my-6 flex items-center justify-between border-t-[1px] border-[#797979] pt-3
+  }
+
+  .tnc{
+    @apply flex items-center justify-between gap-8
+  }
+
+  .footer-text{
+    @apply font-normal text-lg
+  }
 }

@@ -7,7 +7,7 @@ import About from "./components/About";
 import Campus from "./components/Campus";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
-
+import Footer from "./components/Footer";
 // import Testimonials_Test from "./components/Testimonials-test";
 
 function App() {
@@ -24,7 +24,8 @@ function App() {
       <Testimonials />
       <Title subtitle="CONTACT US" title="Get In Touch" />
       <Contact />
-      <Toaster />
+      <Toaster position="bottom-right" reverse-order={true} />
+      <Footer />
       {/* <Testimonials_Test /> */}
     </>
   );
