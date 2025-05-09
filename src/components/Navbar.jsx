@@ -64,7 +64,11 @@ function Navbar() {
         </ul>
         <div className="block md:hidden">
           <ChevronsLeft
-            className="nav-menu-icon"
+            className={`nav-menu-icon ${
+              mobileMenu
+                ? "rotate-180 transition-transform"
+                : "rotate-0 transition-transform"
+            }`}
             onClick={toggleMenu}
           />
         </div>
