@@ -56,11 +56,15 @@
   }
 
   .nav-ul {
-    @apply max-md:fixed max-md:top-0 max-md:right-0 max-md:bottom-0 max-md:bg-[#212EA0] max-md:z-50 max-md:w-[200px] max-md:pt-[50px]  max-md:transition-all;
+    @apply max-md:fixed max-md:top-0 max-md:right-0 max-md:bottom-0 max-md:bg-[#212EA0] max-md:z-50 max-md:w-[200px] max-md:pt-[50px]  max-md:transition-all duration-300;
+  }
+
+  .nav-ul-show{
+    @apply right-[-200px]
   }
 
   .nav-menu-icon{
-    @apply md:hidden block size-7 cursor-pointer z-50 relative
+    @apply block size-8 z-50
   }
 
   .btn {
