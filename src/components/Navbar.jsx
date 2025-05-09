@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import logo from "/logo-icon.svg";
+import menu_icon from "/menu-icon.png";
 import { Link } from "react-scroll";
 
 function Navbar() {
@@ -18,7 +19,7 @@ function Navbar() {
           <img src={logo} className="logo" />
           <p className="title">EduSphere</p>
         </div>
-        <ul>
+        <ul className="nav-ul">
           <li>
             <Link to="hero-section" smooth={true} offest={0} duration={500}>
               Home
@@ -44,16 +45,17 @@ function Navbar() {
               Testimonials
             </Link>
           </li>
-          <Link
-            to="contact"
-            smooth={true}
-            offset={-180}
-            duration={500}
-            className="btn"
-          >
-            Contact Us
-          </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              offset={-180}
+              duration={500}
+              className="btn nav-btn"
+            >
+              Contact Us
+            </Link>
         </ul>
+        <img src={menu_icon} className="nav-menu-icon" />
       </div>
     </nav>
   );

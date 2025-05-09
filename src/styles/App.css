@@ -11,7 +11,13 @@
   }
 
   li {
-    @apply inline-block mx-5 text-lg font-normal text-white cursor-pointer;
+    @apply inline-block mx-5 max-sm:block lg:mx-5 max-md:mx-14 max-md:my-2 text-lg font-normal text-white cursor-pointer;
+  }
+}
+
+@screen md {
+  .dark-nav {
+    @apply md:bg-[#212EA0];
   }
 }
 
@@ -29,11 +35,11 @@
   }
 
   .dark-nav {
-    @apply md:bg-[#212EA0] bg-[#212EA0] duration-300 ease-in-out transition-colors;
+    @apply bg-[#212EA0] duration-300 ease-in-out transition-colors;
   }
 
   .logo {
-    @apply size-10 ml-5;
+    @apply lg:size-10 lg:ml-5 max-md:size-10 max-md:ml-3 max-md:my-3   size-8 ml-3;
   }
 
   .logo-and-title {
@@ -41,7 +47,7 @@
   }
 
   .title {
-    @apply text-white text-2xl mt-1;
+    @apply text-white lg:text-2xl lg:mt-1 max-md:text-2xl max-md:py-4 mt-1;
     font-family: "Cal Sans", sans-serif;
   }
 
@@ -49,8 +55,16 @@
     @apply flex justify-between items-center;
   }
 
+  .nav-ul {
+    @apply max-md:fixed max-md:top-0 max-md:right-0 max-md:bottom-0 max-md:bg-[#212EA0] max-md:z-50 max-md:w-[200px] max-md:pt-[50px]  max-md:transition-all;
+  }
+
+  .nav-menu-icon{
+    @apply md:hidden block size-7 cursor-pointer z-50 relative
+  }
+
   .btn {
-    @apply bg-[#fff] text-[#212121] p-3 my-2 ml-5 rounded-full text-[15px] cursor-pointer border-0 outline-0 inline-flex gap-3 items-center;
+    @apply bg-[#fff] text-[#212121] p-3 my-2 ml-5 rounded-full text-[15px] cursor-pointer border-0 outline-0 inline-flex gap-3 items-center max-md:ml-14;
   }
 
   .hero-section {
@@ -237,23 +251,23 @@
     @apply text-[#676767] max-w-md text-left font-normal text-[18px] mb-4;
   }
 
-  .input-area{
-    @apply block w-full bg-[#EBECFE] p-4 border-none outline-none mb-4 mt-1
+  .input-area {
+    @apply block w-full bg-[#EBECFE] p-4 border-none outline-none mb-4 mt-1;
   }
 
-  .label{
-    @apply text-[#676767] text-lg resize-none
+  .label {
+    @apply text-[#676767] text-lg resize-none;
   }
 
-  .footer{
-    @apply mx-auto my-6 flex items-center justify-between border-t-[1px] border-[#797979] pt-3
+  .footer {
+    @apply mx-auto my-6 flex items-center justify-between border-t-[1px] border-[#797979] pt-3;
   }
 
-  .tnc{
-    @apply flex items-center justify-between gap-8
+  .tnc {
+    @apply flex items-center justify-between gap-8;
   }
 
-  .footer-text{
-    @apply font-normal text-lg
+  .footer-text {
+    @apply font-normal text-lg;
   }
 }
