@@ -40,8 +40,8 @@ The website is fully responsive and optimized for:
 Clone the repository and run it locally:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/your-username/EduSphere.git
+cd EduSphere
 npm install
 npm start
 ```
