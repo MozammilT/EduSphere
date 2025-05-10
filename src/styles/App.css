@@ -104,7 +104,7 @@
   }
 
   .pro-img {
-    @apply w-full rounded-xl block;
+    @apply md:w-full max-md:w-96 rounded-xl block;
   }
 
   .caption {
@@ -132,7 +132,7 @@
   }
 
   .about {
-    @apply flex my-24 mx-auto items-center justify-between gap-9 w-[90%];
+    @apply flex md:flex-row max-md:flex-col-reverse my-24 mx-auto items-center justify-between gap-9 w-[90%];
   }
 
   .about-left {
@@ -140,7 +140,7 @@
   }
 
   .about-right {
-    @apply basis-[90%];
+    @apply basis-[90%] relative;
   }
 
   .about-img {
@@ -163,19 +163,19 @@
   }
 
   .campus {
-    @apply my-20 mx-0 w-11/12 text-center;
+    @apply my-20 mx-auto w-11/12 text-center;
   }
 
   .gallery {
-    @apply flex items-center justify-between gap-8 mb-10;
+    @apply grid gap-6 mb-10 max-md:grid-cols-2 grid-cols-4 justify-center mx-auto w-fit;
   }
 
   .gallery-img {
-    @apply rounded-2xl w-3/12;
+    @apply rounded-2xl w-full block;
   }
 
   .dark {
-    @apply bg-[#212EA0] text-white ml-24 p-4;
+    @apply bg-[#212EA0] text-white ml-0 p-4;
   }
 
   .testimonials {
@@ -242,11 +242,11 @@
   }
 
   .contact {
-    @apply mx-20 my-auto max-w-[90%] flex items-start justify-between;
+    @apply mx-20 my-auto max-w-[90%] md:flex items-start md:justify-between max-md:block;
   }
 
   .contact-col {
-    @apply basis-3/6 bg-[#f5f5f5];
+    @apply basis-3/6 bg-[#f5f5f5] max-md:mb-14;
   }
 
   .contact-col-h3 {
