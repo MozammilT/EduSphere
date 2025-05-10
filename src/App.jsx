@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -8,16 +9,19 @@ import Campus from "./components/Campus";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import VideoPlayer from "./components/VideoPlayer";
 // import Testimonials_Test from "./components/Testimonials-test";
 
 function App() {
+  const [play, setPlay] = useState(false);
+
   return (
     <>
       <Navbar />
       <Hero />
       <Title subtitle="OUR PROGRAM" title="What We Offer" />
       <Programs />
-      <About />
+      <About setPlay={setPlay} />
       <Title subtitle="GALLERY" title="Campus Photos" />
       <Campus />
       <Title subtitle="TESTIMONIALS" title="What Student Says" />
@@ -26,6 +30,7 @@ function App() {
       <Contact />
       <Toaster position="bottom-right" reverse-order={true} />
       <Footer />
+      <VideoPlayer play={play} setPlay={setPlay} />
       {/* <Testimonials_Test /> */}
     </>
   );

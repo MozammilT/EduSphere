@@ -276,4 +276,17 @@
   .footer-text {
     @apply font-normal text-lg;
   }
+
+  .video-player {
+    @apply fixed top-0 left-0 w-full h-full z-50 flex items-center justify-center;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .video {
+    @apply w-[90%] max-w-[900px] h-auto border-4 border-[#fff] outline-none;
+  }
+
+  .hide {
+    @apply hidden transition-all duration-300;
+  }
 }

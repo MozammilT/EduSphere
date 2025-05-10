@@ -1,16 +1,24 @@
 import about_png from "/about.png";
 import play_png from "/play-icon.png";
 
-function About() {
+function About({ setPlay }) {
   return (
     <div className="about center">
       <div className="about-left">
         <img src={about_png} className="about-img" />
-        <img src={play_png} className="play-icon" />
+        <img
+          src={play_png}
+          className="play-icon"
+          onClick={() => {
+            setPlay(true);
+          }}
+        />
       </div>
       <div className="about-right">
         <h2 className="about-subtitle">ABOUT UNIVERSITY</h2>
-        <h3 className="about-title">Nurturing Tomorrow's <br /> Leaders Today</h3>
+        <h3 className="about-title">
+          Nurturing Tomorrow's <br /> Leaders Today
+        </h3>
         <p className="about-p">
           Embark on a transformative educational journey with our university's
           comprehensive education programs. Our cutting-edge curriculum is
