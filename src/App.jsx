@@ -10,7 +10,6 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import VideoPlayer from "./components/VideoPlayer";
-// import Testimonials_Test from "./components/Testimonials-test";
 
 function App() {
   const [play, setPlay] = useState(false);
@@ -31,7 +30,6 @@ function App() {
       <Toaster position="bottom-right" reverse-order={true} />
       <Footer />
       <VideoPlayer play={play} setPlay={setPlay} />
-      {/* <Testimonials_Test /> */}
     </>
   );
 }

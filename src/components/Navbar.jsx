@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import logo from "/logo-icon.svg";
-import menu_icon from "/menu-icon.png";
 import { Link } from "react-scroll";
 import { ChevronsLeft } from "./ChevronsLeft";
 
@@ -10,7 +9,6 @@ function Navbar() {
 
   const toggleMenu = () => {
     mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
-    console.log("clicked");
   };
 
   useEffect(() => {
